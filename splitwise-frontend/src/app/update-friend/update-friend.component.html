@@ -1,0 +1,33 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Update Friend</h3>
+  <form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" id="Name" [(ngModel)] = "friend.name" name = "Name">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" id="Email" [(ngModel)] = "friend.email" name = "Email">
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="text" class="form-control" id="Phone" [(ngModel)] = "friend.phone" name = "Phone">
+    </div>
+    <div class="form-group">
+      <label>Gender</label>
+      <input type="text" class="form-control" id="Gender" [(ngModel)] = "friend.gender" name = "Gender">
+    </div>
+    <div class="form-group">
+      <label>Company</label>
+      <input type="text" class="form-control" id="Company" [(ngModel)] = "friend.company" name = "Company">
+    </div>
+    <div class="form-group">
+      <label>Unsettled</label>
+      <input type="text" class="form-control" id="Unsettled" [(ngModel)] = "friend.unsettled" name = "unsettled">
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+
+  </form>
+  </div>

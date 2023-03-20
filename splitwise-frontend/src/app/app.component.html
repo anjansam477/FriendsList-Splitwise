@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm p-1 bg-secondary text-white  navbar-dark">
+  <ul class = "navbar-nav">
+      <li class = "nav-item">
+          <a routerLink="friends" routerLinkActive="active" class="nav-link" >Friends List</a>
+      </li>
+      <li class = "nav-item">
+          <a routerLink="create-friend" routerLinkActive="active" class="nav-link" >Add Friend</a>
+      </li>
+  </ul>
+</nav>
+
+<h1 class="text-center"><b>{{title}}</b></h1>
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>
+<footer class = "footer">
+  <div class = "container">
+      <span>All Rights Reserved 2023 @SplitwiseApp</span>
+  </div>
+</footer>

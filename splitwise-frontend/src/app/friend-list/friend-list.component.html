@@ -1,0 +1,31 @@
+<h2> Friend List </h2>
+<table class = "table table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>Company</th>
+            <th>unsettled</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let friend of friends">
+              <td> {{friend.id}} </td>
+              <td> {{friend.name}} </td>
+              <td> {{friend.email}} </td>
+              <td> {{friend.phone}}</td>
+              <td> {{friend.gender}}</td>
+              <td> {{friend.company}}</td>
+              <td> {{friend.unsettled}} </td>
+              <td>
+                <button (click)="updateFriend(friend.id)" class="btn btn-info"> Update</button>
+                <button (click)="deleteFriend(friend.id)" class="btn btn-danger" style="margin-left: 10px;"> Delete</button>
+                <button (click)="friendDetails(friend.id)" class="btn btn-info" style="margin-left: 10px;"> View</button>
+              </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,38 @@
+<div class="col-md-6 offset-md-3">
+<h4>Create Friend:</h4>
+<form (ngSubmit) = "onSubmit()">
+
+  <div class="form-group">
+    <label><b>Id:</b></label>
+    <input type="text" class="form-control" id="Id" [(ngModel)] = "friend.id" name = "Id">
+  </div>
+  <div class="form-group">
+    <label><b>Name:</b></label>
+    <input type="text" class="form-control" id="Name" [(ngModel)] = "friend.name" name = "Name">
+  </div>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label><b>Email:</b></label>
+    <input type="text" class="form-control" id="Email" [(ngModel)] = "friend.email" name = "Email">
+  </div>
+  <div class="form-group col-md-6">
+    <label><b>Phone:</b></label>
+    <input type="text" class="form-control" id="Phone" [(ngModel)] = "friend.phone" name = "Phone">
+  </div>
+</div>
+  <div class="form-group">
+    <label><b>Gender:</b></label>
+    <input type="text" class="form-control" id="Gender" [(ngModel)] = "friend.gender" name = "Gender">
+  </div>
+  <div class="form-group">
+    <label><b>Company:</b></label>
+    <input type="text" class="form-control" id="Company" [(ngModel)] = "friend.company" name = "Company">
+  </div>
+  <div class="form-group">
+    <label><b>Unsettled:</b></label>
+    <input type="text" class="form-control" id="Unsettled" [(ngModel)] = "friend.unsettled" name = "unsettled">
+  </div>
+
+  <button class="btn btn-success" style="margin:5px" type="submit">Submit</button>
+</form>
+</div>
